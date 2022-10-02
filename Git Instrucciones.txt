@@ -1,0 +1,49 @@
+UBUNTU TERMINAL COMMANDS
+
+Change Directory: 			cd new_directory
+Go Previous Directory: 			cd ..
+
+See list: 				ls
+
+Create new directory: 			mkdir new_directory
+Delete directory: 			rm -rf directory_removed
+
+Create new file: 			touch new_file.txt
+Remove file:	 			rm file.txt
+
+Git version: 				git --version
+Create Git Repository:			git init
+get Repository Info:			git status
+
+Add file to repo stage area:		git add file.txt
+Add all new files to repo stage area:	git add . 	(Also it's used to refresh all changes including removes)
+
+Delete file in stage area: 		git rm -f file.txt
+Select a file to not be added:		git rm --cached file.txt
+
+Configure the commit email:		git config --global user.email "alex@gmail.com"
+Configure the commit user name:		git config --global user.name "Alex"
+Commit help:				git commit --help
+Execute a commit with comment:		git commit -m "Initial commit"
+See the historic of commits:		git log
+
+Go to a previous commit state:		git checkout {id of the commit} 
+Go to the latest commit: 		git checkout master
+
+Create new branch:			git branch dev
+Create and change new brange:		git checkout -b dev
+Change to another branch:		git checkout dev
+See list of branches:			git branch -a
+Delete branch:				git branch -d dev 
+
+Merge a branch to the current:		git merge dev		(We are merging dev to master that is the selected one)
+
+Connect local repo to remote repo in github:			git remote add origin https://linkoftheremoterepo.git
+Check both repo are connected:					git remote -v
+
+Pull changes in remote to local repo:				git pull
+Pull changes in a branch in remote to local branch:		git pull origin main (here is the name of the branch in  remote)
+
+Push changes in local repo to remote repo:			git push -u origin master  (here is the name of the branch in local)
+
+Delete remote branch:						git push origin --delete nameofthebranch
