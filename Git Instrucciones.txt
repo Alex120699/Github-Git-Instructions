@@ -46,4 +46,4 @@ Pull changes in a branch in remote to local branch:		git pull origin main (here 
 
 Push changes in local repo to remote repo:			git push -u origin master  (here is the name of the branch in local)
 
-Delete remote branch:						git push origin --delete nameofthebranch
+Delete remote branch:						git push origin --delete name_of_the_branch
